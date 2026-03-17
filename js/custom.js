@@ -9,6 +9,9 @@ window.addEventListener("scroll", function () {
 });
 
 
+//swiper slider script starts
+
+
     var swiper = new Swiper(".swiper", {
       slidesPerView: 4,
       spaceBetween: 20,
@@ -22,3 +25,5 @@ window.addEventListener("scroll", function () {
         prevEl: '.swiper-button-prev',
   },
     });
+
+//swiper slider script ends

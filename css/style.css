@@ -208,6 +208,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    color:#000;
+    display: inline-block;
 }
 
 .featured_content p {
@@ -271,6 +274,32 @@ body {
 .partner_header {
     text-align: center;
     text-transform: uppercase;
+}
+
+.partner h2 {
+    width:701px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.partner_content {
+    width:503px;
+    margin: 30px auto 0;
+}
+
+.partner p {
+    font-size: 20px;
+}
+
+.partner .container-fluid {
+    position: relative;
+}
+
+.partner_section_image_1 {
+    position: absolute;
+    top: 110px;
+    width:350px;
 }
 
 @media (min-width: 1400px) {
