@@ -239,7 +239,7 @@ body {
     padding-right: 44px;
 }
 
-.featured_slide {
+.featured_slide_inner {
     height:394px;
     background-color: #ddd;
     border-radius: 12px;
@@ -250,6 +250,28 @@ body {
 
 .featured_slide:nth-child(odd) {
     margin-top: 60px;
+}
+
+.featured_slide h5 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.featured_projects .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.featured_projects .location p {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#818181;
 }
 
 .swiper-navigation-icon {
