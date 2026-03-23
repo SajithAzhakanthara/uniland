@@ -139,11 +139,32 @@ function mobileMenuToggle() {
 
 }
 
+let serviceSwiper;
 
+function initSwiper() {
+  if (window.innerWidth < 768) {
+    if (!serviceSwiper) {
+      serviceSwiper = new Swiper(".services_slider", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 15,
 
+        pagination: {
+          el: ".service_swipper_pagination",
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (serviceSwiper) {
+      serviceSwiper.destroy(true, true);
+      serviceSwiper = null;
+    }
+  }
+}
 
-
-
+window.addEventListener("load", initSwiper);
+window.addEventListener("resize", initSwiper);
 
 
 customRecentSliderButton();

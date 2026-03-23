@@ -235,6 +235,22 @@ body {
     text-decoration: none;
     color:#000;
     display: inline-flex;
+    transition: all ease 0.5s;
+}
+
+.common_button:hover {
+    background-color: #000;
+    color:#fff;
+    transition: all ease 0.5s;
+}
+
+.common_button:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(229deg) brightness(102%) contrast(101%);
+    transition: all ease 0.5s;
+}
+
+.common_button img {
+    transition: all ease 0.5s;
 }
 
 .common_button_black {
@@ -252,6 +268,25 @@ body {
     display: inline-flex;
 }
 
+
+.common_button_black:hover,
+.more_service_btn:hover {
+    color:#000;
+    background-color: transparent;
+    transition: all ease 0.5s;
+}
+
+ .common_button_black:hover img,
+ .more_service_btn:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(97%) saturate(3%) hue-rotate(142deg) brightness(105%) contrast(100%);
+    transition:all ease 0.5s;
+  }
+
+   .common_button_black img,
+   .more_service_btn img {
+    transition:all ease 0.5s;
+  }
+
 .recent_update_btn {
     border-radius: 100px;
     background-color: transparent;
@@ -264,6 +299,12 @@ body {
     text-decoration: none;
     color:#000;
     display: inline-flex;
+    transition: all ease 0.5s;
+}
+
+.recent_update_btn:hover {
+    font-weight: bold;
+    transition: all ease 0.5s;
 }
 
 .recent_update_btn img {
@@ -547,10 +588,35 @@ body {
     background-color: #fff;
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
 }
 
 .services_items_outer {
     margin-top: 40px;
+}
+
+.services_slider .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap !important; 
+}
+
+.services_slider .swiper-slide {
+  flex-shrink: 0;  
+  width: 100%;
+    display: flex;
+  height: auto; /* important */        
+}
+
+.service_swipper_pagination {
+  position: relative !important;
+  margin-top: 30px;
+}
+
+.services_slider {
+  padding-bottom: 40px; /* space for dots */
 }
 
 .services_items_inner h4 {
@@ -575,6 +641,21 @@ body {
 .services_items {
     margin-bottom: 24px;
 }
+/* slider css */
+
+
+
+.services_slider {
+  overflow: hidden;
+}
+
+.services_slider .swiper-wrapper {
+  display: flex;
+}
+
+.services_slider .swiper-slide {
+  flex-shrink: 0;
+}
 
 .more_services h4 {
     text-align: center;
@@ -587,6 +668,7 @@ body {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 100px;
+    border:1px solid #000;
 }
 
 .more_service_btn_wrap {
