@@ -29,11 +29,11 @@ var swiper = new Swiper(".swiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      centeredSlides: true,   // ✅ center on mobile
+      centeredSlides: true,   // 
     },
     768: {
       slidesPerView: 2,
-      centeredSlides: false,  // ❌ disable center
+      centeredSlides: false,  // 
     },
     992: {
       slidesPerView: 4,
@@ -93,5 +93,36 @@ const recentUpdateSwiper = new Swiper(".recent_update_slider", {
     }
   }
 });
+
+//custom slider button recent updates
+
+function customRecentSliderButton() {
+  let buttonLeft = document.querySelectorAll('.custom_recent_slider_btn_left');
+  let buttonRight = document.querySelectorAll('.custom_recent_slider_btn_right');
+
+  let originalButtonLeft = document.querySelector('.recent_upadete_slide_prev');
+  let originalButtonRight = document.querySelector('.recent_upadete_slide_next');
+
+  buttonLeft.forEach(function(item){
+    item.addEventListener('click', function(){
+      originalButtonLeft.click();
+    })
+    
+  })
+  
+  buttonRight.forEach(function(item){
+    item.addEventListener('click', function(){
+      originalButtonRight.click();
+    })
+  })
+
+
+
+}
+
+
+customRecentSliderButton();
+
+
 
 
