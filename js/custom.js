@@ -109,7 +109,7 @@ function customRecentSliderButton() {
     })
     
   })
-  
+
   buttonRight.forEach(function(item){
     item.addEventListener('click', function(){
       originalButtonRight.click();
@@ -120,8 +120,34 @@ function customRecentSliderButton() {
 
 }
 
+//menu toggle script
+
+function mobileMenuToggle() {
+
+    let mobileToggle = document.querySelector('.mobile_menu_toggle_btn');
+    let mobileMenu = document.querySelector('.mobile_menu');
+    let mobileMenuClose = document.querySelector('.menu_close_btn');
+
+    mobileToggle.addEventListener('click',function(){
+      mobileMenu.classList.remove('d-none');
+    })
+
+    mobileMenuClose.addEventListener('click',function(){
+      mobileMenu.classList.add('d-none');
+    })
+
+
+}
+
+
+
+
+
+
+
 
 customRecentSliderButton();
+mobileMenuToggle()
 
 
 

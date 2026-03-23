@@ -985,10 +985,31 @@ body {
     height:100%;
     top: 0;
     left:0;
+    padding: 25px;
 }
 
 .mobile_menu ul {
-    
+    padding: 0;
+    margin: 15px 0 0;
+    list-style: none;
+}
+
+.mobile_menu ul li {
+    margin-bottom: 15px;
+}
+
+.mobile_menu ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+button.menu_close_btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
 }
 
 
